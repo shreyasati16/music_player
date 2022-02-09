@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY-Music-player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="main">
+   
+    
+    <nav>
+        <ul>
+            <li class="brand">
+            <image src ="cover/download.png" alt="Spotify-Music" width="120px" height="100px"></image> Spotify</li>
+            <li>Home</li>
+            <li>About</li>
+            <li>contact</li>
+
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="loader">
+            <span style="--i:1;"></span>
+            <span style="--i:2;"></span>
+            <span style="--i:3;"></span>
+            <span style="--i:4;"></span>
+            <span style="--i:5;"></span>
+            <span style="--i:6;"></span>
+            <span style="--i:7;"></span>
+            <span style="--i:8;"></span>
+            <span style="--i:9;"></span>
+    </div>
+        <div class="songlist">
+            
+            <h1>&#128151 Best of Lofi-Music Collection &#128151</h1>
+            <div class="songitems">
+                <img src="cover/pal1.jpeg">
+                <span class = "songName">Pal-jalebi</span class = "songName">
+                <span class = "songName" class="songlistplay">
+              
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+                
+            </div>
+            <div class="songitems">
+                <img src="cover/images.jpg">
+                <span class = "songName">Dil-ko-karrar</span class = "songName">
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="1" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songitems">
+                <img src="cover/thodapyaar.jpg">
+                <span class = "songName">thoda-pyar</span class = "songName">
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="2" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songitems">
+                <img src="cover/4.jpg">
+                <span class = "songName">Dekh-lena</span class = "songName">
+                    <span class="songlistplay"><span class="timestamp">05:34 <i id="3" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songitems">
+                <img src="cover/5.jpg">
+                <span class = "songName">Falak-tak</span class = "songName">
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songitems">
+                <img src="cover/6.jpg">
+                <span class = "songName">phir-kabhi</span class = "songName">
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            <div class="songitems">
+                <img src="cover/7.jpg">
+                <span class = "songName">tere-naina</span class = "songName">
+                <span class="songlistplay"><span class="timestamp">05:34 <i id="0" class="far songItemPlay fa-play-circle"></i> </span></span>
+            </div>
+            
+        </div>
+        
+        <div class="classbanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" min="0" value=0 max="100">
+        <div class="icons">
+            <!--fontawesome icons -->
+            <button type="button">
+            <i class="fas fa-3x fa-step-backward" id="previous"></i>
+            <i class="far fa-3x fa-play-circle" id="masterPlay"></i>
+            <i class ="fas fa-3x fa-step-forward" id="next"></i> 
+        </button>
+        </div>
+        <div class="songInfo">
+            
+            <img src="cover/play.gif"  width="40vw"  id="gif">Pal-Arijit_Singh
+        </div>
+        <div class="myName">
+        <a href="https://github.com/shreyasati16">&#128151 Shreya's_mini-player &#128151</a>
+        </div>
+    </div> 
+    <script src="script.js"></script>
+    <script src ="https://kit.fontawesome.com/26504e4a1f.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
