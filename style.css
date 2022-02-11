@@ -12,12 +12,16 @@ body{
     margin: 0;
     box-sizing: border-box;
 }
+.main{
+    display: grid;
+    
+}
 
 nav{
     font-family:'Ubuntu',sans-serif;
     position: sticky;
     top: 0%;
-    grid-row: auto;
+    display: flexbox;
 }
 nav ul{
     display: flex;
@@ -257,11 +261,15 @@ li:hover{
     0 0 15px yellowgreen,
     0 0 20px rgb(162, 236, 14);
 }
-@media only screen and (min-width: 480px) {
+@media only screen and (max-width: 300px) {
     div.container {
       font-size: 12px;
+      
     }
     div.loader {
         font-size: small;
+    }
+    songlist {
+        width: min-content;
     }
   }
