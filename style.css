@@ -6,19 +6,18 @@ body{
     background-color:rgb(227, 251, 190);
     background-image: linear-gradient( 110.1deg,  rgba(34,126,34,1) 2.9%, rgba(168,251,60,1) 90.3% );
     /* background-image: linear-gradient( 122.3deg,  rgba(111,71,133,1) 14.6%, rgba(232,129,166,1) 29.6%, rgba(237,237,183,1) 42.1%, rgba(244,166,215,1) 56.7%, rgba(154,219,232,1) 68.7%, rgba(238,226,159,1) 84.8% ); */
-    align-items: center;
-    justify-content: center;
-   
 }
 *{
-    margin: 0%;
-    padding: 0%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 nav{
     font-family:'Ubuntu',sans-serif;
     position: sticky;
     top: 0%;
+    grid-row: auto;
 }
 nav ul{
     display: flex;
@@ -54,6 +53,7 @@ li:hover{
     height: fit-content;
 }
 .songlist{
+    
     font-weight: bold;
     margin-left: 50px;
     margin-top: 10px;
@@ -108,14 +108,15 @@ li:hover{
 .loader{
     position: relative;
     display: flex;
+    align-items: center;
+    margin-left: -32vh;
  
 }
 .loader span{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    /* position: absolute; */
+    top:1vh;
+    width: 10%;
+    height: 10%;
     transform: rotate(calc(36deg * var(--i)));
 
 }
@@ -123,13 +124,14 @@ li:hover{
     
     content: ' ';
     position: absolute;
-    top: 0;
+    top: 3cm;
     left: 0;
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    align-content: left;
+    height:0;
     background: transparent;
     box-sizing: border-box;
-    border: 4px solid rgb(188, 253, 10);
+    border: 2px solid rgb(188, 253, 10);
     border-radius: 50%;
    
     box-shadow: 0 0 5px yellowgreen,
@@ -146,8 +148,8 @@ li:hover{
     -30px 30px 0px rgb(8, 228, 37),
     -30px 30px 20px rgb(52, 211, 105); 
     transform-origin:8px;
-   animation-delay: calc(-0.25s * var(--i));
-    animation: animate 5s linear infinite;
+   animation-delay: calc(5s * var(--i));
+    animation: animate 2s linear infinite;
     transition: 2s;
 }
 .loader:hover span::before{
@@ -255,72 +257,11 @@ li:hover{
     0 0 15px yellowgreen,
     0 0 20px rgb(162, 236, 14);
 }
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    .loader{
-        position: relative;
-        display: flex;
-     
+@media only screen and (min-width: 480px) {
+    div.container {
+      font-size: 12px;
     }
-    .loader span{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        transform: rotate(calc(36deg * var(--i)));
-    
-    }
-    .loader span::before{
-        
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 25px;
-        height: 25px;
-        background: transparent;
-        box-sizing: border-box;
-        border: 4px solid rgb(188, 253, 10);
-        border-radius: 50%;
-       
-        box-shadow: 0 0 5px yellowgreen,
-        0 0 7px rgb(183, 226, 98),
-        0 0 9px rgb(176, 238, 52),
-        0 0 11px rgb(47, 68, 5),
-        0 0 15px rgb(168, 251, 0),
-        -30px -30px 0px blue,
-        -30px -30px 20px rgb(131, 131, 246),
-        30px 30px 0px blue,
-        30px 30px 20px rgb(131, 131, 246),
-        30px -30px 0px blue,
-        30px -30px 20px rgb(131, 131, 246),
-        -30px 30px 0px rgb(8, 228, 37),
-        -30px 30px 20px rgb(52, 211, 105); 
-        transform-origin:8px;
-       animation-delay: calc(-0.25s * var(--i));
-        animation: animate 5s linear infinite;
-        transition: 2s;
-    }
-    .loader:hover span::before{
-        box-shadow:  -30px -30px 0px blue,
-        -30px -200px 20px rgb(131, 131, 246),
-        30px 200px 0px blue,
-        30px 200px 20px rgb(131, 131, 246),
-        30px -30px 0px blue,
-        30px -30px 20px rgb(131, 131, 246),
-        -30px 30px 0px rgb(8, 228, 37),
-        -30px 30px 20px rgb(52, 211, 105);
-        transform-origin: 250px; 
-    }
-    @keyframes animate{
-        0%{
-            transform: rotate(0deg);
-            filter: hue-rotate(0deg);
-        }
-        100%{
-            transform: rotate(360deg);
-            filter:hue-rotate(360deg) ;
-        }
+    div.loader {
+        font-size: small;
     }
   }
