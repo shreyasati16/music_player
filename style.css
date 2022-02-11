@@ -8,6 +8,7 @@ body{
     /* background-image: linear-gradient( 122.3deg,  rgba(111,71,133,1) 14.6%, rgba(232,129,166,1) 29.6%, rgba(237,237,183,1) 42.1%, rgba(244,166,215,1) 56.7%, rgba(154,219,232,1) 68.7%, rgba(238,226,159,1) 84.8% ); */
 }
 *{
+    
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -268,7 +269,7 @@ li:hover{
     div.loader {
         font-size: small;
     }
-    songlist {
+    .songlist {
         width: min-content;
     }
   }
