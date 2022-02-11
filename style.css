@@ -14,7 +14,7 @@ body{
 }
 .main{
     display: grid;
-    
+
 }
 
 nav{
@@ -261,10 +261,9 @@ li:hover{
     0 0 15px yellowgreen,
     0 0 20px rgb(162, 236, 14);
 }
-@media only screen and (max-width: 300px) {
+@media only screen and (max-width: 480px) {
     div.container {
-      font-size: 12px;
-      
+      font-size: 22px;
     }
     div.loader {
         font-size: small;
