@@ -265,43 +265,23 @@ li:hover{
     0 0 15px yellowgreen,
     0 0 20px rgb(162, 236, 14);
 }
-@media screen and (min-width : 0px) and (max-width:420px){
-  .main{
-      height: 100vh;
-      width:100vw;
-  } 
-  .container{
-    height: 70vh;
-    width:80vw;
-    font-size: medium;
-     
-}  
-.songitems{
-    width: 20vw;
-    height:1vh;
-}
-nav{
-    width:100vw;
-    height: 1vh;
-    position:sticky;
-    top:0;
-}
-.bottom{
-    width: 100vw;
-    height:18vh;
-    position:sticky;
-    bottom: 0;
-    
-}
-.loader{
+@media screen and (min-width : 0px) and (max-width:520px){
+.main{
+    width:520px;
+    height: 600px;
+    padding: 0;
     box-sizing: border-box;
-    size:small;
 }
-.songInfo{
-    font-size: medium;
+.container,.songInfo,.songitems{
+    display: flex;
+    width:200px;  
 }
-.myName{
-    font-size:x-small;
+.myName,.songInfo{
+    font-size:xx-small;
 }
+.container{
+    padding:5px 25px  5px 25px;
+}
+
 }
   
