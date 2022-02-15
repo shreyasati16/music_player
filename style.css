@@ -17,11 +17,13 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   
 }
 
 
 
 nav{
+    background-color: black;
     font-family:'Ubuntu',sans-serif;
     position:sticky;
     top: 0%;
@@ -303,6 +305,13 @@ li:hover{
 }
 .myName,.songInfo{
     font-size:xx-small;
+
+}
+
+}
+.myName{
+    position: absolute;
+    right:0vw;
 }
 .container{
     padding:5px 25px  5px 25px;
