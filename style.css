@@ -5,7 +5,7 @@
 body{
     margin:0;
     padding:0;
-    width: 100%;
+    width: 100vw;
     height: 100%;
     position:relative;
     background-color:rgb(227, 251, 190);
@@ -23,9 +23,10 @@ body{
 
 nav{
     font-family:'Ubuntu',sans-serif;
-    position: sticky;
+    position:sticky;
     top: 0%;
     display: flexbox;
+    width:100vw;
 }
 nav ul{
     display: flex;
@@ -78,19 +79,34 @@ li:hover{
 }
 .bottom{
     background-color: black;
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
-    height: 12vh;
-    position:sticky;
+    flex-wrap: nowrap;
+    height: 10vh;
+    position:fixed;
     bottom:0;
     justify-content: center;
     align-items: center;
     color: white;
     flex-direction: column;
 }
+.masterSongName{
+    position:absolute;
+    left:1vw;
+}
+.myName{
+    position:absolute;
+    right:0vw;
+}
+
+}
 .icons{
     margin-top: 8px;
     margin-bottom: 2px;
     cursor: pointer;
+    position: absolute;
+    align-items: center;
 }
 .container{
     min-height: 70vh;
@@ -137,14 +153,14 @@ li:hover{
     content: ' ';
     position: absolute;
     top: 3cm;
-    left: 0;
-    width: 100px;
+    left: 0px;
+    width: 12px;
     align-content: left;
     height:0;
     background: transparent;
     box-sizing: border-box;
-    border: 2px solid rgb(188, 253, 10);
-    border-radius: 50%;
+    border: 7px solid rgb(188, 253, 10);
+    border-radius: 100%;
    
     box-shadow: 0 0 5px yellowgreen,
     0 0 7px rgb(183, 226, 98),
@@ -232,8 +248,10 @@ li:hover{
     cursor: pointer;
 }
 #myProgressBar{
-    width: 75vw;
+    width: 100vw;
     cursor: pointer;
+    position: absolute;
+    top:0vh;
 }
 #masterplay{
     margin: 0px 10px;
@@ -244,6 +262,9 @@ li:hover{
     font-weight: bold;
    font-size: 2vw;
    font-family:'Bold 700',sans-serif;
+}
+.masterSongName{
+    
 }
 .songInfo img{
     opacity: 0;
