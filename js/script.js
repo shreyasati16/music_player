@@ -6,9 +6,8 @@ let audioElement = new Audio('songs/1.mp3');
 let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
-
 let masterSongName = document.getElementById('masterSongName');
-let songItems = Array.from(document.getElementsByClassName('songItem'));
+let songItems = Array.from(document.getElementsByClassName('songItems'));
 
 let songs = [
     {songsName: "pal-arijit_singh",filepath:"songs/1.mp3",coverPath:"covers/pal.jpeg"},
@@ -22,7 +21,7 @@ let songs = [
 
 songItems.forEach((element, i)=>{ 
     element.getElementsByTagName("img")[0].src = songs[i].coverPath; 
-    element.getElementsByClassName("songName")[0].innerText = songs[i].songName; 
+    element.getElementsByClassName("songsName")[0].innerText = songs[i].songsName; 
 })
  
 
@@ -33,14 +32,12 @@ masterPlay.addEventListener('click', ()=>{
         masterPlay.classList.remove('fa-play-circle');
         masterPlay.classList.add('fa-pause-circle');
         gif.style.opacity = 1;
-       
     }
     else{
         audioElement.pause();
         masterPlay.classList.remove('fa-pause-circle');
         masterPlay.classList.add('fa-play-circle');
         gif.style.opacity = 0;
-       
     }
 })
 // Listen to Events
@@ -68,7 +65,7 @@ Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
         e.target.classList.remove('fa-play-circle');
         e.target.classList.add('fa-pause-circle');
         audioElement.src = `songs/${songIndex+1}.mp3`;
-        masterSongName.innerText = songs[songIndex].songName;
+        masterSongName.innerText = songs[songIndex].songsName;
         audioElement.currentTime = 0;
         audioElement.play();
         gif.style.opacity = 1;
@@ -85,7 +82,7 @@ document.getElementById('next').addEventListener('click', ()=>{
         songIndex += 1;
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
-    masterSongName.innerText = songs[songIndex].songName;
+    masterSongName.innerText = songs[songIndex].songsName;
     audioElement.currentTime = 0;
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');
@@ -101,7 +98,7 @@ document.getElementById('previous').addEventListener('click', ()=>{
         songIndex -= 1;
     }
     audioElement.src = `songs/${songIndex+1}.mp3`;
-    masterSongName.innerText = songs[songIndex].songName;
+    masterSongName.innerText = songs[songIndex].songsName;
     audioElement.currentTime = 0;
     audioElement.play();
     masterPlay.classList.remove('fa-play-circle');

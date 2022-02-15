@@ -113,11 +113,15 @@ li:hover{
     position: revert;
     
 }
-.loader{
-    position: relative;
+.container loader{
+    position:relative;
+}
+ .loader{
+    position: absolute;
     display: flex;
     align-items: center;
-    margin-left: -32vh;
+    left: 60%;
+    top: 50%;
  
 }
 .loader span{
@@ -267,14 +271,14 @@ li:hover{
 }
 @media screen and (min-width : 0px) and (max-width:520px){
 .main{
-    width:520px;
+    width:380px;
     height: 600px;
     padding: 0;
     box-sizing: border-box;
 }
 .container,.songInfo,.songitems{
     display: flex;
-    width:200px;  
+    width: 180px;  
 }
 .myName,.songInfo{
     font-size:xx-small;
