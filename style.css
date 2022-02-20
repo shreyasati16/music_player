@@ -291,7 +291,7 @@ li:hover{
     0 0 15px yellowgreen,
     0 0 20px rgb(162, 236, 14);
 }
-@media screen and (min-width : 480px) and (max-width:768px){
+@media screen and (min-width :0px) and (max-width:568px){
 .main{
     width:380px;
     height: 600px;
@@ -322,7 +322,6 @@ li:hover{
     right:0vw;
 }
 .container{
-    position:relative;
     padding:5px 25px  5px 25px;
 }
 .nav,.body{
