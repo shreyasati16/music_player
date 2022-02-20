@@ -324,10 +324,9 @@ li:hover{
 }
 .container{
     padding:5px 25px  5px 25px;
-    margin-top:3vh;
-    margin-bottom:3vh;
+   
 }
-.nav,.body{
+.nav body{
     position: absolute;
     width: 100vw;
 }
