@@ -7,7 +7,7 @@ let masterPlay = document.getElementById('masterPlay');
 let myProgressBar = document.getElementById('myProgressBar');
 let gif = document.getElementById('gif');
 let masterSongName = document.getElementById('masterSongName');
-let songItems = Array.from(document.getElementsByClassName('songItems'));
+let songItems = Array.from(document.getElementsByClassName('songitems'));
 
 let songs = [
     {songsName: "pal-arijit_singh",filepath:"songs/1.mp3",coverPath:"covers/pal.jpeg"},
